@@ -2,10 +2,19 @@
   margin: 0;
   border: 0;
   padding: 0;
+  border-radius: 15px;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 body {
   background-color: lightgray;
+}
+
+.main-holder {
+  width: 95vw;
+  background-color: grey;
+  margin: 0 auto;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 body .game-header {
@@ -22,6 +31,7 @@ body .game-header {
   border-bottom: 1px solid black;
   padding-bottom: 15px;
   text-align: center;
+  border-radius: 0;
 }
 
 .header-text {
@@ -33,16 +43,18 @@ body .game-header {
 
 .playground {
   display: flex;
+  justify-content: space-around;
 }
 
 .player {
-  width: 50%;
+  width: 45%;
   height: 150px;
   background-color: lightblue;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .guess {
@@ -64,25 +76,30 @@ body .game-header {
 }
 
 .computer {
-  width: 50%;
+  width: 45%;
   height: 150px;
   background-color: lightgreen;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .computer-selection {
   font-size: 64px;
 }
 
+body .result-box {
+  margin: 0 auto;
+}
 .result-box {
-  width: 100vw;
+  width: 90vw;
   height: 200px;
   background-color: lightpink;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .result-text {
@@ -90,10 +107,18 @@ body .game-header {
   word-wrap: break-word;
 }
 
+body .start-game {
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;;
+}
+
 .start-game {
+
   border: 1px solid black;
-  width: 100%;
+  width: 90%;
   height: 35px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .start-game:active {
