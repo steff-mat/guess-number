@@ -81,23 +81,13 @@ function playerResult() {
     document.querySelector(".check").addEventListener("click", function () {
       stringPlayerSelection = document.querySelector(".guess").value;
       playerSelection = Number(stringPlayerSelection);
-      playerValidation();
+      computerResult();
     });
   }
 function computerResult() {
     computerSelection = Math.floor(Math.random() * 10) + 1;
     document.querySelector(".computer-selection").textContent = computerSelection;
   }
-
-function playerValidation() {
-    if (playerSelection >= 1 && playerSelection <= 10) computerResult();
-    switch(playerSelection) {
-        case 0: alert("U donkey, refresh browser and enter number"), document.querySelector(".check").disabled = true;
-        break;
-        case undefined: alert("U donkey, refresh browser and enter number");
-        break;
-        }
-}
 
 function checker() {
     document.querySelector(".check").addEventListener("click", function () {
