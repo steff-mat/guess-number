@@ -125,6 +125,7 @@ function play() {
       checker();
     } else {
       alert("Rule broken, only betwen 0 and 10 it works");
+      // document.reload();
     }
   });
 }
