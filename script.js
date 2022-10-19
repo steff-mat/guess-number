@@ -4,6 +4,7 @@ let pGiftResult;
 let cGiftResult;
 
 function playerGift() {
+  document.querySelector(".result-box").style.backgroundColor = "lightblue";
     pGift = Math.floor(Math.random() * 10) + 1;
     switch (pGift) {
       case 1:
@@ -39,6 +40,7 @@ function playerGift() {
     }
   }
 function computerGift() {
+  document.querySelector(".result-box").style.backgroundColor = "lightgreen";
     cGift = Math.floor(Math.random() * 10) + 1;
     switch (cGift) {
       case 1:

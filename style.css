@@ -66,7 +66,7 @@ body .game-header {
 .computer {
   width: 50%;
   height: 150px;
-  background-color: lightpink;
+  background-color: lightgreen;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,7 +79,7 @@ body .game-header {
 .result-box {
   width: 100vw;
   height: 200px;
-  background-color: lightgreen;
+  background-color: lightpink;
   display: flex;
   justify-content: center;
   align-items: center;
