@@ -1,4 +1,5 @@
 let playerSelection;
+let stringPlayerSelection;
 let computerSelection;
 let pGiftResult;
 let cGiftResult;
@@ -83,29 +84,38 @@ function playerResult() {
     document.querySelector(".check").addEventListener("click", function () {
       stringPlayerSelection = document.querySelector(".guess").value;
       playerSelection = Number(stringPlayerSelection);
-      computerResult();
+      validator();
     });
   }
+
 function computerResult() {
     computerSelection = Math.floor(Math.random() * 10) + 1;
     document.querySelector(".computer-selection").textContent = computerSelection;
+    console.log(computerSelection);
+    checker();
   }
 
 function checker() {
-    document.querySelector(".check").addEventListener("click", function () {
-      if (playerSelection == computerSelection) {
-        playerGift();
-        document.querySelector(".result-text").textContent = pGiftResult;
-      } else if (playerSelection != computerSelection) {
-        computerGift();
-        document.querySelector(".result-text").textContent = cGiftResult;
-      }
-    });
+  if (playerSelection == computerSelection) {
+    playerGift();
+    document.querySelector(".result-text").textContent = pGiftResult;
+  } else if (playerSelection != computerSelection) {
+    computerGift();
+    document.querySelector(".result-text").textContent = cGiftResult;
+  }
+  }
+
+  function validator() {
+    if(playerSelection < 1 || playerSelection > 10) {
+      alert("U donkey, refresh browser and enter number");
+    } else {
+      computerResult();
+    }
   }
 
 function game() {
     playerResult();
-    checker();
+    
 }
 
 document.querySelector(".start-game").addEventListener("click", function () {
