@@ -93,6 +93,7 @@ body .game-header {
 .start-game {
   border: 1px solid black;
   width: 100%;
+  height: 35px;
 }
 
 .start-game:active {
