@@ -78,7 +78,7 @@ body .game-header {
 
 .result-box {
   width: 100vw;
-  height: 300px;
+  height: 200px;
   background-color: lightgreen;
   display: flex;
   justify-content: center;
@@ -88,4 +88,13 @@ body .game-header {
 .result-text {
   font-size: 32px;
   word-wrap: break-word;
+}
+
+.start-game {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.start-game:active {
+  background-color: gainsboro;
 }
