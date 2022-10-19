@@ -125,9 +125,14 @@ function play() {
       checker();
     } else {
       alert("Rule broken, only betwen 0 and 10 it works");
-      // document.reload();
     }
   });
 }
 
 play();
+
+//
+//
+//
+//
+//! Find that annoing but for char rep. fix to reload webpage to avoid overloading
