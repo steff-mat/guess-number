@@ -1,14 +1,20 @@
-* {
-  color: whitesmoke;
-  font-family: "Wonder Boy In Monster World", sans-serif;
+/* * {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  border-radius: 15px;
+  text-shadow: 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 body {
-  background: rgb(25, 25, 25);
+  background-color: lightgray;
 }
 
-body .main-holder {
+.main-holder {
   width: 95vw;
+  background-color: grey;
+  margin: 0 auto;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 body .game-header {
@@ -16,6 +22,16 @@ body .game-header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.game-header {
+  margin-top: 10px;
+  width: 100%;
+  height: 150px;
+  border-bottom: 1px solid black;
+  padding-bottom: 15px;
+  text-align: center;
+  border-radius: 0;
 }
 
 .header-text {
@@ -33,13 +49,16 @@ body .game-header {
 .player {
   width: 45%;
   height: 150px;
+  background-color: lightblue;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .guess {
+  border: 1px solid black;
   width: 50%;
   height: 50%;
   text-align: center;
@@ -47,22 +66,23 @@ body .game-header {
 }
 
 .check {
+  border: 1px solid black;
   width: 25%;
   height: 25%;
-  color: black;
 }
 
 .check:active {
   background-color: gainsboro;
-  color: black;
 }
 
 .computer {
   width: 45%;
   height: 150px;
+  background-color: lightgreen;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .computer-selection {
@@ -72,13 +92,14 @@ body .game-header {
 body .result-box {
   margin: 0 auto;
 }
-
 .result-box {
   width: 90vw;
   height: 200px;
+  background-color: lightpink;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .result-text {
@@ -93,51 +114,18 @@ body .start-game {
 }
 
 .start-game {
+  border: 1px solid black;
   width: 90%;
   height: 35px;
-  color: black;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .start-game:active {
-  color: black;
   background-color: gainsboro;
-}
-
-input,
-textarea {
-  background-color: rgb(25, 25, 25);
-  border: 4px solid;
 }
 
 @media screen and (max-width: 400px) {
   h1 {
-    font-size: 16px;
+    font-size: 24px;
   }
-
-  h3 {
-    font-size: 16px;
-  }
-
-  .game-header p {
-    font-size: 8px;
-  }
-
-  .guess {
-    text-align: center;
-    font-size: 8px;
-    background-color: black;
-  }
-
-  .check {
-    text-align: center;
-    font-size: 5px;
-  }
-
-  .result-text {
-    font-size: 16px;
-  }
-
-  .start-game {
-    font-size: 8px;
-  }
-}
+} */
