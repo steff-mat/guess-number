@@ -5,7 +5,7 @@ let pGiftResult;
 let cGiftResult;
 
 function playerGift() {
-  document.querySelector(".result-box").style.backgroundColor = "lightblue";
+  document.querySelector(".result-text").style.color = "darkgreen";
   pGift = Math.floor(Math.random() * 10) + 1;
   switch (pGift) {
     case 1:
@@ -90,8 +90,7 @@ function playerResult() {
 
 function computerResult() {
   computerSelection = Math.floor(Math.random() * 10) + 1;
-
-  console.log(computerSelection);
+  document.querySelector(".computer-selection").textContent = computerSelection;
   checker();
 }
 
@@ -105,6 +104,7 @@ function checker() {
     computerGift();
     document.querySelector(".result-text").textContent = cGiftResult;
   }
+  document.querySelector(".check").textContent = "Play again!";
 }
 
 function validator() {

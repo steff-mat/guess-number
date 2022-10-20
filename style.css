@@ -1,15 +1,15 @@
 * {
   color: whitesmoke;
-  font-family: "Mezalia Sumatra_PersonalUseOnly", sans-serif;
+  font-family: 'Lemon', cursive;
 }
 
 body {
   background: rgb(25, 25, 25);
 }
 
-body .main-holder {
+/* body .main-holder {
   width: 95vw;
-}
+} */
 
 body .game-header {
   display: flex;
@@ -23,6 +23,16 @@ body .game-header {
   margin-bottom: 15px;
   display: flex;
   justify-content: space-around;
+}
+
+h3 {
+  margin-bottom: 4px;
+}
+
+p {
+  text-align : center;
+  word-wrap:normal;
+  margin: 4px;
 }
 
 .playground {
@@ -40,16 +50,17 @@ body .game-header {
 }
 
 .guess {
-  width: 50%;
+  width: 60%;
   height: 50%;
   text-align: center;
   font-size: 32px;
 }
 
 .check {
-  width: 25%;
+  width: 100%;
   height: 25%;
   color: black;
+  text-align: center;
 }
 
 .check:active {
@@ -59,7 +70,7 @@ body .game-header {
 
 .computer {
   width: 45%;
-  height: 150px;
+  height: 140px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -75,14 +86,14 @@ body .result-box {
 
 .result-box {
   width: 90vw;
-  height: 200px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .result-text {
-  font-size: 32px;
+  font-size: 28px;
   word-wrap: break-word;
 }
 
@@ -114,7 +125,7 @@ textarea {
     font-size: 16px;
   }
 
-  h3 {
+  /* h3 {
     font-size: 16px;
   }
 
@@ -139,5 +150,5 @@ textarea {
 
   .start-game {
     font-size: 8px;
-  }
+  } */
 }
