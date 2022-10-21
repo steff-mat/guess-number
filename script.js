@@ -120,9 +120,11 @@ function game() {
 }
 
 document.querySelector(".start-game").addEventListener("click", function () {
+  document.querySelector(".menu-game").classList.add("hidden");
+  document.querySelector(".main-holder").classList.remove("hidden");
   game();
-  document.getElementById("start").disabled = true;
-  if ((document.getElementById("start").disabled = true)) {
-    document.getElementById("start").style.opacity = 0;
-  }
+  // document.getElementById("start").disabled = true;
+  // if ((document.getElementById("start").disabled = true)) {
+  //   document.getElementById("start").style.opacity = 0;
+  // }
 });
