@@ -1,21 +1,37 @@
 * {
   color: whitesmoke;
-  font-family: 'Lemon', cursive;
+  font-family: "Lemon", cursive;
 }
 
 body {
   background: rgb(25, 25, 25);
 }
 
-/* body .main-holder {
-  width: 95vw;
-} */
+img {
+  background-image: url("./src/matrix.gif");
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  z-index: -1 !important;
+  position: absolute;
+}
+
+.main-holder {
+  background-color: rgb(25, 25, 25);
+  background-color: rgb(25, 25, 25, 0.2);
+}
 
 body .game-header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: 2;
 }
 
 .header-text {
@@ -23,6 +39,11 @@ body .game-header {
   margin-bottom: 15px;
   display: flex;
   justify-content: space-around;
+  z-index: 2;
+}
+
+h1 {
+  text-align: center;
 }
 
 h3 {
@@ -30,14 +51,15 @@ h3 {
 }
 
 p {
-  text-align : center;
-  word-wrap:normal;
+  text-align: center;
+  word-wrap: normal;
   margin: 4px;
 }
 
 .playground {
   display: flex;
   justify-content: space-around;
+  z-index: 2;
 }
 
 .player {
@@ -56,16 +78,20 @@ p {
   font-size: 32px;
 }
 
-.check {
-  width: 100%;
-  height: 25%;
+button {
+  background-color: white;
   color: black;
   text-align: center;
 }
 
-.check:active {
+button:active {
   background-color: gainsboro;
   color: black;
+}
+
+.check {
+  width: 100%;
+  height: 25%;
 }
 
 .computer {

@@ -122,4 +122,7 @@ function game() {
 document.querySelector(".start-game").addEventListener("click", function () {
   game();
   document.getElementById("start").disabled = true;
+  if ((document.getElementById("start").disabled = true)) {
+    document.getElementById("start").style.opacity = 0;
+  }
 });
