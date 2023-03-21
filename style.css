@@ -10,9 +10,19 @@ body {
 
 .main-body {
   max-width: 500px;
-  height: 100dvh;
   background-color: #051e05;
+  height: 100dvh;
   margin: 0 auto;
+}
+
+.matrix {
+  width: 50%;
+  height: 100%;
+  opacity: 0.02;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .mb {
