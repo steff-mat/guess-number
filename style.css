@@ -76,7 +76,7 @@ body {
   height: 50px;
   background-color: #051e05;
   position: absolute;
-  top: calc(50dvh - 25px);
+  top: calc(50dvh - 125px);
   left: calc(50dvw - 150px);
   display: flex;
   align-items: center;
