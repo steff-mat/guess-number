@@ -16,12 +16,12 @@ body {
 }
 
 .matrix {
-  width: 50%;
-  height: 100%;
-  opacity: 0.02;
-  position: fixed;
-  top: 40%;
+  width: 26%;
+  height: 50%;
+  opacity: 0.05;
+  position: absolute;
   left: 50%;
+  top: 15%;
   transform: translate(-50%, -50%);
 }
 
