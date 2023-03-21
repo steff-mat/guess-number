@@ -4,56 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guess wut I wanna do 2U</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lemon&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess The Number</title>
   </head>
   <body>
-    <div class="menu-game">
-      <h1>Guess what I want to do to you (^_^')</h1>
-      <button class="start-game">Play</button>
-      <button class="settings-game">Settings</button>
-      <button class="close-game">Exit</button>
+    <div class="main-body">
+      <div class="mb mb-top">
+        <p>Rules:</p>
+        <p>1. Press any button</p>
+        <p>2. Pray to win!</p>
+      </div>
+      <div class="mb mb-center">
+        <div class="winner-text" id="winner"></div>
+        <div class="zone computer-zone" id="computer"></div>
+        <div class="zone player-zone" id="player"></div>
+      </div>
+      <div class="mb mb-bottom">
+        <button class="btn-selection" id="1"><p>1</p></button>
+        <button class="btn-selection" id="2"><p>2</p></button>
+        <button class="btn-selection" id="3"><p>3</p></button>
+        <button class="btn-selection" id="4"><p>4</p></button>
+        <button class="btn-selection" id="5"><p>5</p></button>
+        <button class="btn-selection" id="6"><p>6</p></button>
+        <button class="btn-selection" id="7"><p>7</p></button>
+        <button class="btn-selection" id="8"><p>8</p></button>
+        <button class="btn-selection" id="9"><p>9</p></button>
+        <button class="btn-selection" id="10"><p>10</p></button>
+      </div>
     </div>
-    <div class="main-holder hidden">
-      <img class="matrix" />
-      <div class="game-header">
-        <h3>Rules:</h3>
-        <p>1. You can enter a number between 1 and 10</p>
-        <p>2. Have fun luv :3</p>
-        <p>x. opsie, I forgot to tell ya, if you don't guess, then...</p>
-        <p>y. ahhh... If you win...</p>
-      </div>
-      <div class="header-text">
-        <p>YOU</p>
-        <p>ME</p>
-      </div>
-      <div class="playground">
-        <div class="player">
-          <input
-            type="number"
-            placeholder="1...10"
-            class="guess"
-            max="10"
-            min="1"
-            required
-          />
-        </div>
-        <div class="computer">
-          <span class="computer-selection">-</span>
-        </div>
-      </div>
-      <button type="submit" class="check">Check!</button>
-      <div class="result-box">
-        <p class="result-text">Let's see the result :)</p>
-      </div>
-      <!-- <button type=button" class="start-game" id="start">Press Here to Start</button> -->
-    </div>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

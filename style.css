@@ -1,186 +1,87 @@
 * {
-  color: whitesmoke;
-  font-family: "Lemon", cursive;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background: rgb(25, 25, 25);
+  background-color: black;
 }
 
-/* MENU SIDE */
-.menu-game {
+.main-body {
+  max-width: 500px;
+  height: 100dvh;
+  background-color: #051e05;
+  margin: 0 auto;
+}
+
+.mb {
+  width: 100%;
+}
+
+.mb-top {
+  height: 30%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mb-top p {
+  font-size: 3rem;
+  color: rgb(200, 200, 200);
+}
+
+.mb-center {
+  height: 40%;
+}
+
+.mb-bottom {
+  height: 30%;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
-body button {
-  margin: 20px;
-  padding: 35px;
-  border-radius: 100%;
-  width: 150px;
-  height: 150px;
-  box-shadow: 3px 3px 15px rgba(240, 128, 128, 0.3);
-  background-color: lightgrey;
+.btn-selection {
+  width: 80px;
+  height: 80px;
+  margin: 0 10px;
+  border-radius: 50px;
+  box-shadow: 5px 5px 5px black;
 }
 
-body button:hover {
-  transform: scale(1.3);
-  background-color: whitesmoke;
-  text-align: center;
-}
-/* GAME SIDE */
-img {
-  background-image: url("./src/matrix.gif");
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.3;
-  width: 100%;
-  height: 100%;
-  z-index: -1 !important;
-  position: absolute;
+.mb-center {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 .hidden {
   display: none;
 }
 
-.main-holder {
-  background-color: rgb(25, 25, 25);
-  background-color: rgb(25, 25, 25, 0.2);
-}
-
-body .game-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 2;
-}
-
-.header-text {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  display: flex;
-  justify-content: space-around;
-  z-index: 2;
-}
-
-h1 {
-  margin-top: 0;
-  text-align: center;
-}
-
-h3 {
-  margin-bottom: 4px;
-}
-
-p {
-  text-align: center;
-  word-wrap: normal;
-  margin: 4px;
-}
-
-.playground {
-  display: flex;
-  justify-content: space-around;
-  z-index: 2;
-}
-
-.player {
-  width: 45%;
-  height: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-}
-
-.guess {
-  width: 60%;
-  height: 50%;
-  text-align: center;
-  font-size: 32px;
-}
-
-button {
-  background-color: white;
-  color: black;
-  text-align: center;
-}
-
-button:active {
-  background-color: gainsboro;
-  color: black;
-}
-
-.check {
-  width: 100%;
-  height: 25%;
-  margin-left: 0;
-  border-radius: 0;
-}
-
-.computer {
-  width: 45%;
-  height: 140px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.computer-selection {
-  font-size: 64px;
-}
-
-body .result-box {
-  margin: 0 auto;
-}
-
-.result-box {
-  width: 90vw;
+.winner-text {
+  width: 300px;
+  max-width: 500px;
   height: 100px;
+  background-color: #051e05;
+  position: absolute;
+  top: calc(50dvh - 50px);
+  left: calc(50dvw - 150px);
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  color: white;
 }
 
-.result-text {
-  font-size: 28px;
-  word-wrap: break-word;
-}
-
-/* body .start-game {
-  display: block;
-  margin: 0 auto;
-  margin-top: 15px;
-}
-
-.start-game {
-  width: 90%;
-  height: 35px;
-  color: black;
-}
-
-.start-game:active {
-  color: black;
-  background-color: gainsboro;
-} */
-
-input,
-textarea {
-  background-color: rgb(25, 25, 25);
-  border: 4px solid;
-}
-
-@media screen and (max-width: 400px) {
-  h1 {
-    font-size: 16px;
-    word-wrap: normal;
-    text-align: center;
-  }
+.zone {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 4rem;
+  border: 1px solid black;
 }
