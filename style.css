@@ -20,16 +20,23 @@ body {
 }
 
 .mb-top {
-  height: 30%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.mb-top p {
+  font-size: 2rem;
+  color: rgb(200, 200, 200);
+}
+
+.mbp {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.mb-top p {
-  font-size: 3rem;
-  color: rgb(200, 200, 200);
 }
 
 .mb-center {
@@ -42,14 +49,16 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-top: 15px;
 }
 
 .btn-selection {
-  width: 80px;
-  height: 80px;
-  margin: 0 10px;
+  width: 25%;
+  height: 25%;
+  margin: 1px;
+  padding: 5px;
   border-radius: 50px;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px black;
 }
 
 .mb-center {
@@ -64,10 +73,10 @@ body {
 .winner-text {
   width: 300px;
   max-width: 500px;
-  height: 100px;
+  height: 50px;
   background-color: #051e05;
   position: absolute;
-  top: calc(50dvh - 50px);
+  top: calc(50dvh - 25px);
   left: calc(50dvw - 150px);
   display: flex;
   align-items: center;
