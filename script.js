@@ -30,8 +30,8 @@ buttons.forEach((x) => {
   button.addEventListener('click', () => {
     cpu();
     player.innerText = button.innerText;
-    playerValue = player.innerText;
-    cpuValue = computer.innerText;
+    playerValue = parseInt(player.innerText);
+    cpuValue = parseInt(computer.innerText);
     switcher();
     winner.classList.remove('hidden');
     winner.innerText = resultText;
