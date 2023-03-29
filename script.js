@@ -2,21 +2,7 @@ const player = document.getElementById('player');
 const computer = document.getElementById('computer');
 const winner = document.getElementById('winner');
 const buttons = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
-const giftText = [
-  'get Rafaelo',
-  'get hugs',
-  'get breakfast in bed',
-  'get back massage',
-  'get movie night with pizza',
-  'get date night',
-  'get to choose what we do tonight',
-  'get ice cream',
-  'get cuddling and spooning',
-  'get a gift',
-];
-function gift() {
-  return giftText[Math.trunc(Math.random() * 10)];
-}
+
 let playerValue = '';
 let cpuValue = '';
 let resultText;
@@ -44,12 +30,12 @@ buttons.forEach((x) => {
 function switcher() {
   if (playerValue < cpuValue) {
     winner.style.backgroundColor = 'darkred';
-    resultText = `You don't ${gift()}`;
+    resultText = `Don't go too deep!`;
   } else if (playerValue > cpuValue) {
-    winner.style.backgroundColor = 'darkgreen';
-    resultText = `You ${gift()}`;
+    winner.style.backgroundColor = 'darkred';
+    resultText = `Shooting for the moon, huh?`;
   } else if (playerValue == cpuValue) {
-    winner.style.backgroundColor = 'black';
-    resultText = 'Nobody gets anything';
+    winner.style.backgroundColor = 'darkgreen';
+    resultText = 'Well... Feeling lucky today, huh?';
   }
 }
